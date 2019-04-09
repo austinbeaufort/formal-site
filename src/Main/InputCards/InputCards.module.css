@@ -4,6 +4,20 @@
     align-items: center;
 }
 
+@media (min-width: 768px) {
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    .cardsContainer {
+        grid-template-columns: auto auto auto;
+    }
+}
+
 
 /*--------------------INPUT LIBRARY CHANGED FOR REACT-----------------------*/
 .input input {
@@ -363,4 +377,6 @@
     box-shadow: 0 0 3px 20px rgb(255, 213, 241);
     border: 5px solid hotpink;
 }
+
+
 

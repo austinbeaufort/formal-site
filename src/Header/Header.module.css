@@ -2,6 +2,7 @@
 .container {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 10px;
 }
 
 .img {
@@ -14,6 +15,13 @@
 }
 
 
-@media (min-width: 1000px) {
-
+@media (min-width: 768px) {
+    .container {
+        justify-content: start;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .subTitle {
+        margin-left: 20px;
+    }
 }
