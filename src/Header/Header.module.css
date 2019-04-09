@@ -1,7 +1,7 @@
-
 .container {
     display: flex;
-    justify-content: space-evenly;
+    margin-left: 5px;
+    justify-content: flex-start;
     margin-top: 10px;
 }
 
@@ -11,17 +11,171 @@
 }
 
 .subTitle {
-    margin-top: 35px;
+    margin-top: 36px;
+    margin-left: 8px;
+}
+
+.ul {
+    display: none;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.menu {
+    margin-bottom: 45px;
+}
+
+.menu:hover {
+    cursor: pointer;
+    background-color: lightgoldenrodyellow;
 }
 
 
-@media (min-width: 768px) {
+/* ------ MODAL ------*/
+
+.modalUL {
+    list-style: none;
+    margin: 40px 40px;
+    text-align: center;
+}
+
+.modalA {
+    text-decoration: none;
+    color: black;
+}
+
+.modalA:hover {
+    color: goldenrod;
+}
+
+.modalLI {
+    margin: 10px 0;
+    margin-right: 50px;
+    font-size: 30px;
+    background-color: lightgray;
+    padding: 10px 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.modalLIOdd {
+    background-color: black;
+    color: white;
+}
+
+.modalLIOdd:hover {
+    color: gold;
+}
+
+
+@media (min-width: 400px) {
     .container {
-        justify-content: start;
-        margin-top: 20px;
-        margin-left: 20px;
+        justify-content: space-between;
+    }
+    .menu {
+        margin-top: 5px;
+        margin-right: 10px;
+        padding: 0 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .img {
+        margin-left: 10px;
+    }
+
+    .menu {
+        margin-right: 20px;
+    }
+
+    .title {
+        margin-left: -270px;
+    }
+
+    .subTitle {
+        margin-left: -270px;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .title {
+        margin-left: -400px;
     }
     .subTitle {
-        margin-left: 20px;
+        margin-left: -400px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .title {
+        margin-left: -500px;
+    }
+    .subTitle {
+        margin-left: -500px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .menu {
+        display: none;
+    }
+
+    .title {
+        margin-left: -300px;
+    }
+    .subTitle {
+        margin-left: -300px;
+    }
+
+    .ul {
+        display: inline-flex;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    .a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .a:hover {
+        color: gold;
+    }
+
+    .a:active {
+        color: goldenrod;
+    }
+
+    .li {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .title {
+        margin-left: -400px;
+    }
+    .subTitle {
+        margin-left: -400px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .title {
+        margin-left: -500px;
+    }
+    .subTitle {
+        margin-left: -500px;
     }
 }
