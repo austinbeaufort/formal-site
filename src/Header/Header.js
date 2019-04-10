@@ -16,6 +16,10 @@ class Header extends Component {
         this.setState({ open: false });
     };
 
+    scrollHandler = () => {
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+
     render() {
         const { open } = this.state;  
         return (
@@ -29,17 +33,16 @@ class Header extends Component {
                     <div className={styles.burger}></div>
                 </div>
                 <ul className={styles.ul}>
-                    <a className={styles.a} href="/"><li className={styles.li}>NPM</li></a>
-                    <a className={styles.a} href="/"><li className={styles.li}>Download</li></a>
-                    <a className={styles.a} href="/"><li className={styles.li}>Github Repo</li></a>
-                    <a className={styles.a} href="/"><li className={styles.li}>Let's Talk!</li></a>
+                    <a className={styles.a} rel="noopener noreferrer" target="_blank" href="https://raw.githubusercontent.com/austinbeaufort/formal/master/style.css"><li className={styles.li}>Download</li></a>
+                    <a className={styles.a} rel="noopener noreferrer" target="_blank" href="https://www.npmjs.com/package/formal-forms"><li className={styles.li}>npm</li></a>
+                    <a className={styles.a} rel="noopener noreferrer" target="_blank" href="https://github.com/austinbeaufort/formal"><li className={styles.li}>Github Repo</li></a>
+                    <li onClick={this.scrollHandler} className={styles.li + ' ' + styles.a}>Let's Talk!</li>
                 </ul>
                 <Modal open={open} onClose={this.onCloseModal} center>
                     <ul className={styles.modalUL}>
-                        <a className={styles.modalA} href="/"><li className={styles.modalLI + ' ' + styles.modalLIOdd}>Download</li></a>
-                        <a className={styles.modalA} href="/"><li className={styles.modalLI}>NPM</li></a>
-                        <a className={styles.modalA} href="/"><li className={styles.modalLI + ' ' + styles.modalLIOdd}>Github Repo</li></a>
-                        <a className={styles.modalA} href="/"><li className={styles.modalLI}>Let's Talk!</li></a>
+                        <a className={styles.modalA} rel="noopener noreferrer" target="_blank" href="https://raw.githubusercontent.com/austinbeaufort/formal/master/style.css"><li className={styles.modalLI + ' ' + styles.modalLIOdd}>Download</li></a>
+                        <a className={styles.modalA} rel="noopener noreferrer" target="_blank" href="https://www.npmjs.com/package/formal-forms"><li className={styles.modalLI}>npm</li></a>
+                        <a className={styles.modalA} rel="noopener noreferrer" target="_blank" href="https://github.com/austinbeaufort/formal"><li className={styles.modalLI + ' ' + styles.modalLIOdd}>Github Repo</li></a>
                     </ul>
                 </Modal>
             </div>

@@ -51,6 +51,7 @@
 
 .modalA:hover {
     color: goldenrod;
+    cursor: pointer;
 }
 
 .modalLI {
@@ -146,6 +147,7 @@
 
     .a:hover {
         color: gold;
+        cursor: pointer;
     }
 
     .a:active {
@@ -159,6 +161,7 @@
         border-left: 1px solid gray;
         border-right: 1px solid gray;
         padding: 0 10px;
+        margin-bottom: 25px;
     }
 }
 
